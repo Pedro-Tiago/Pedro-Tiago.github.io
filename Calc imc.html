@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <link rel="shortcut icon" href="img/logo-pedro128.ico" type="image/x-icon">
+    <script src="Script.pag3.js"></script>
+    <style>
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root{
+    --fonte1: 'Bebas Neue' cursive;
+}
+
+*{
+    font-family: 'Bebas Neue', cursive;
+}
+body{
+    background-color: lightslategray;
+}
+
+div{
+    margin: auto;
+    margin-top: 40px;
+    max-width: 800px;
+    height: 400px;
+    padding-top: 10px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+input{
+    margin: 5px;
+}
+.botão{
+    width: 120px;
+    height: 30px;
+    font-size: 20px;
+}
+.botão:hover{
+    width: 130px;
+    height: 35px;
+    font-size: 23px;
+    cursor:pointer
+}
+aside{
+    font-size: 30px;
+    padding-top: 10px;
+}
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Calculadora de IMC</h1>
+        <section> Digite aqui o seu peso: (Em kg.) <input type="number" name="peso" id="peso"><br>
+           Digite aqui a sua altura: (Em metros.) <input type="number" name="alt" id="alt"><br>
+           <input type="button" value="calcular" onclick="calcular()" class="botão">
+           <aside id="res"></aside>
+        </section>
+</body>
+</html>
